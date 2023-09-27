@@ -8,6 +8,11 @@ mongodb_container_name: 'mongodb'
 mongodb_port: 27017
 
 ###########################################################################
+# Docker Proces settings
+# the user the mongodb process runs as
+mongodb_docker_user: 'docker'
+
+###########################################################################
 # Authentication
 # Enable authentication
 mongodb_auth: false
