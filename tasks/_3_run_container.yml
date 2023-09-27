@@ -23,6 +23,7 @@
       - '{{ mongodb_container_name }}-data'
     ports:
       - '{{ mongodb_port }}:{{ mongodb_internal_port }}'
+    user: '{{ mongodb_docker_user }}'
   register: mongodb_container
 
 - name: Wait until mongodb starts up
