@@ -3,6 +3,7 @@
   docker_image:
     name: '{{ mongodb_docker_image }}'
     tag: '{{ mongodb_docker_image_tag }}'
+    source: 'pull'
 
 - name: Create data container
   docker_container:
